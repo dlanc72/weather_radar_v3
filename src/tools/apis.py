@@ -242,14 +242,14 @@ def get_birthdays(birthdays) -> List[str]:
     date (str):   currentDateString
     value (int):  numberOfFirstDoseVaccinations
     """
-    url = "https://api.coronavirus.data.gov.uk/v1/data?filters=areaName=United%2520Kingdom;areaType=overview&latestBy=cumPeopleVaccinatedFirstDoseByPublishDate&structure=%7B%22date%22:%22date%22,%22value%22:%22cumPeopleVaccinatedFirstDoseByPublishDate%22%7D&format=json&page=1"
+    """url = https://api.coronavirus.data.gov.uk/v1/data?filters=areaName=United%2520Kingdom;areaType=overview&latestBy=cumPeopleVaccinatedFirstDoseByPublishDate&structure=%7B%22date%22:%22date%22,%22value%22:%22cumPeopleVaccinatedFirstDoseByPublishDate%22%7D&format=json&page=1
     try:
         r = requests.get(url)
     except Exception as e:
         return None
     if r.status_code != 200:
         return None
-    return r.json()["data"][0]
+    return r.json()["data"][0]"""
 
 """def get_vaccinations_second_dose() -> dict:
     
