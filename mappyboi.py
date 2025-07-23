@@ -5,7 +5,6 @@ import traceback
 
 from random import random
 
-"from src.mappyboi import MappyBoi
 from settings import ifttt_key
 from src.tools.apis import send_error
 
@@ -26,6 +25,7 @@ ZOOM = 7
 
 
 try:
+    from src.mappyboi import MappyBoi
     logging.info("Weather map")
 
     mappy_boi = MappyBoi(lat=LAT, lon=LON, zoom=ZOOM)
