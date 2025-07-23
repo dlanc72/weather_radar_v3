@@ -5,7 +5,7 @@ import traceback
 
 from random import random
 
-from src.mappyboi import MappyBoi
+"from src.mappyboi import MappyBoi
 from settings import ifttt_key
 from src.tools.apis import send_error
 
